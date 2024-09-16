@@ -25,6 +25,9 @@ body{
 .sidebar .text{
     font-size: 16px;
     font-weight: 500;
+    transition: var(--tran-04);
+    opacity: 1;
+    white-space: nowrap;
 }
 .sidebar .image{
     min-width: 60px;
@@ -40,6 +43,14 @@ body{
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
+    z-index: 100;
+    transition: var(--tran-05);
+}
+.sidebar.close{
+    width: 60px;
+}
+.sidebar.sidebar.close .text{
+    opacity: 0;
 }
 .sidebar header{
     position: relative;
